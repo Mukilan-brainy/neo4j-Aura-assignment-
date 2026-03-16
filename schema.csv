@@ -1,0 +1,102 @@
+nodes,relationships
+"[
+  {
+    identity: -103,
+    labels: [character],
+    properties: {
+      indexes: [],
+      name: character,
+      constraints: [Constraint( id=9, name='personId_character_uniq', type='NODE PROPERTY UNIQUENESS', schema=(:character {personId}), ownedIndex=8 )]
+    },
+    elementId: -103
+  },
+  {
+    identity: -101,
+    labels: [released_year],
+    properties: {
+      indexes: [],
+      name: released_year,
+      constraints: [Constraint( id=5, name='movieId_released_year_uniq', type='NODE PROPERTY UNIQUENESS', schema=(:released_year {movieId}), ownedIndex=4 )]
+    },
+    elementId: -101
+  },
+  {
+    identity: -100,
+    labels: [movie_titile],
+    properties: {
+      indexes: [],
+      name: movie_titile,
+      constraints: [Constraint( id=3, name='movieId_movie_titile_uniq', type='NODE PROPERTY UNIQUENESS', schema=(:movie_titile {movieId}), ownedIndex=2 )]
+    },
+    elementId: -100
+  },
+  {
+    identity: -102,
+    labels: [vote],
+    properties: {
+      indexes: [],
+      name: vote,
+      constraints: [Constraint( id=7, name='movieId_vote_uniq', type='NODE PROPERTY UNIQUENESS', schema=(:vote {movieId}), ownedIndex=6 )]
+    },
+    elementId: -102
+  },
+  {
+    identity: -104,
+    labels: [genere],
+    properties: {
+      indexes: [],
+      name: genere,
+      constraints: [Constraint( id=11, name='movieId_genere_uniq', type='NODE PROPERTY UNIQUENESS', schema=(:genere {movieId}), ownedIndex=10 )]
+    },
+    elementId: -104
+  }
+]","[
+  {
+    identity: -100,
+    start: -100,
+    end: -101,
+    type: year released,
+    properties: {
+      name: year released
+    },
+    elementId: -100,
+    startNodeElementId: -100,
+    endNodeElementId: -101
+  },
+  {
+    identity: -101,
+    start: -100,
+    end: -102,
+    type: avg.vote,
+    properties: {
+      name: avg.vote
+    },
+    elementId: -101,
+    startNodeElementId: -100,
+    endNodeElementId: -102
+  },
+  {
+    identity: -102,
+    start: -100,
+    end: -103,
+    type: character,
+    properties: {
+      name: character
+    },
+    elementId: -102,
+    startNodeElementId: -100,
+    endNodeElementId: -103
+  },
+  {
+    identity: -103,
+    start: -100,
+    end: -104,
+    type: genere_type,
+    properties: {
+      name: genere_type
+    },
+    elementId: -103,
+    startNodeElementId: -100,
+    endNodeElementId: -104
+  }
+]"

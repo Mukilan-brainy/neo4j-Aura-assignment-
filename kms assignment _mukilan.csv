@@ -1,0 +1,8 @@
+name,description,query,id,parentId,isFolder
+character & movie graph,,"MATCH (character), (movie_title)
+RETURN character, movie_title
+LIMIT 50",0,,false
+all node,,"MATCH(n)
+RETURN n",1,,false
+schema-visual,,CALL db.schema.visualization,2,,false
+vote for movie,,MATCH p=()-[:`avg.vote`]->() RETURN p LIMIT 25;,3,,false
